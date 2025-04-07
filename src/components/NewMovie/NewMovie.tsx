@@ -46,8 +46,8 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         name="title"
         label="Title"
         value={title}
-        onChange={titleInput => {
-          setTitle(titleInput);
+        onChange={changeEvent => {
+          setTitle(changeEvent);
         }}
         required
       />
@@ -56,8 +56,8 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         name="description"
         label="Description"
         value={description}
-        onChange={descriptionInput => {
-          setDescription(descriptionInput);
+        onChange={changeEvent => {
+          setDescription(changeEvent);
         }}
       />
 
@@ -65,8 +65,8 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         name="imgUrl"
         label="Image URL"
         value={imgUrl}
-        onChange={imgUrlInput => {
-          setImgUrl(imgUrlInput);
+        onChange={changeEvent => {
+          setImgUrl(changeEvent);
         }}
         required
       />
@@ -75,8 +75,8 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         name="imdbUrl"
         label="Imdb URL"
         value={imdbUrl}
-        onChange={imdbUrlInput => {
-          setImdbUrl(imdbUrlInput);
+        onChange={changeEvent => {
+          setImdbUrl(changeEvent);
         }}
         required
       />
@@ -85,8 +85,8 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         name="imdbId"
         label="Imdb ID"
         value={imdbId}
-        onChange={imdbIdInput => {
-          setImdbId(imdbIdInput);
+        onChange={changeEvent => {
+          setImdbId(changeEvent);
         }}
         required
       />
